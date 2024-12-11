@@ -28,7 +28,7 @@ spec:
             - name: WORDPRESS_TABLE_PREFIX
               value: wp_
             - name: WORDPRESS_DB_HOST
-              value: db
+              value: db.database.svc.cluster.local
             - name: WORDPRESS_DB_USER
               valueFrom:
                 secretKeyRef:
