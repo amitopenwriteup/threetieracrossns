@@ -5,7 +5,7 @@ metadata:
   name: db-pvc
   namespace: database
 spec:
-  StorageClassName: nfs-client
+  storageClassName: nfs-client
   resources:
     requests:
       storage: 10Gi
