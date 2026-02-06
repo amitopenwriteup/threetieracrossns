@@ -55,6 +55,8 @@ kind: Service
 metadata:
   name: db
   namespace: database
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   ports:
     - port: 3306
