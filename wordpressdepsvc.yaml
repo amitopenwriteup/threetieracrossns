@@ -4,6 +4,8 @@ kind: Deployment
 metadata:
   name: wordpress
   namespace: wordpress
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   replicas: 1
   selector:
@@ -52,6 +54,8 @@ kind: Service
 metadata:
   name: wordpress
   namespace: wordpress
+  annotations:
+    argocd.argoproj.io/sync-wave: "6"
 spec:
   type: NodePort
   ports:
